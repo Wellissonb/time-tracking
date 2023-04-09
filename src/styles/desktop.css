@@ -1,0 +1,84 @@
+@charset 'UTF-8';
+
+@media screen and (min-width: 950px){
+
+    main{
+        padding: 0;
+    }
+
+    .gridContainer{
+        grid-template-columns: repeat(4, minmax(200px, 250px));
+        grid-template-rows: repeat(2,250px);
+        height: 100%;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .profile{
+        grid-column: span 1;
+        grid-row: span 2;
+        
+    }
+
+    .icon{
+        width: 70px;
+        top: -10px;
+    }
+
+    .jeremy{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 35px;
+        gap: 40px;
+    }
+
+    
+
+    .jeremy h1{
+        font-size: calc(2.1em + 1%);
+        letter-spacing: 1px;
+
+    }
+
+    .jeremy p{
+        font-size: 15px;
+    }
+
+    .buttonContainer{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .insideContainer{
+        flex-direction: column;
+        gap: 20px;
+        height: 80%;
+    }
+
+    .threePoints p{
+        font-size: calc(18px + 1%);
+    }
+
+    .time{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .time h2{
+        font-size: calc(2.5em + .5vw);
+    }
+    
+
+
+}

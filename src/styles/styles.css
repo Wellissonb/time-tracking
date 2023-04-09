@@ -1,0 +1,236 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body,html,#root{
+    background-color: var(--Verydarkblue);
+}
+
+main{
+    padding: 10vh 0px;
+}
+
+:root{
+--Blue: hsl(246, 80%, 60%);
+--Lightredwork: hsl(15, 100%, 70%);
+--Softblueplay: hsl(195, 74%, 62%);
+--Lightredstudy: hsl(348, 100%, 68%);
+--Limegreenexercise: hsl(145, 58%, 55%);
+--Violetsocial: hsl(264, 64%, 52%);
+--Softorangeselfcare: hsl(43, 84%, 65%);
+
+--Verydarkblue: hsl(226, 43%, 10%);
+--Darkblue: hsl(235, 46%, 20%);
+--Desaturatedblue: hsl(235, 45%, 61%);
+--PaleBlue: hsl(236, 100%, 87%);
+}
+
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 180px repeat(6,150px);
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile{
+    background-color: var(--Darkblue) !important;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.329);
+}
+
+.profile img{
+    width: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.profile img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px white;
+    filter: drop-shadow(100%);
+}
+
+.jeremy{
+    width: 100%;
+    height: 70%;
+    background-color: var(--Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.jeremy h1{
+    font-size: 1.5em;
+    color: white;
+    font-weight: 300;
+}
+
+p#report{
+    color: var(--PaleBlue);
+}
+
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: var(--PaleBlue);
+    font-size: 17px;
+    font-weight: 400;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+button:hover{
+    color: white;
+    transform: translateY(-1px);
+}
+
+.gridItem{
+    background-color: white;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.26);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.icon{
+    position: absolute;
+    right: 10px;
+}
+
+.insideContainer{
+    overflow: visible;
+    background-color: var(--Darkblue);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    transition: all .5s;
+}
+
+.insideContainer:hover{
+    background-color: hsl(237, 34%, 24%);
+}
+
+.gridItem:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 20px var(--Darkblue);
+}
+
+
+.insideContainer p,h2,span{
+    animation: teste .2s linear forwards;
+
+}
+
+@keyframes teste {
+    from{
+        opacity: 0;
+        transform: translateY(1px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.jeremy p{
+    color: var(--PaleBlue);
+}
+
+.threePoints{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+}
+
+.threePoints p{
+    font-size: 18px;
+    color: white;
+}
+
+.threePoints svg{
+    color: var(--PaleBlue);
+}
+
+#points{
+    transition: all .2s;
+}
+
+#points:hover{
+    color: white;
+    transform: scale(1.2);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.cardSpan{
+    position: absolute;
+    top: 1px;
+    text-align: center;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: var(--Verydarkblue);
+    transition: all .5s;
+    margin: auto;
+    display: none;
+}
+
+
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.time h2{
+    color: white;
+    font-weight: 300;
+}
+
+.time p{
+    font-weight: 300;
+    color: var(--PaleBlue);
+}
+
+
+
+
+
+
+
